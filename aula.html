@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="aula.css" media="screen" />
+</head>
+<body>
+    <div class="chat-geral">
+        <div class="chat-header">
+            <h1>Papeamento</h1>
+            <button class="botao-alternar" type="button" id="botao-alternar" onclick="alternarTipoMensagem()">Alternar</button>
+        </div>
+        <div class="chat-mensagem" id="chat-mensagem">
+            <!-- Mensagens aqui -->
+            <div class="mensagem recebida">
+                <p>Fala chefia</p>
+            </div>
+            <div class="mensagem recebida">
+                <p>Me vê uma coquinha geladinha</p>
+            </div>
+            <div class="mensagem enviada">
+                <p>Opa, fala meu guri</p>
+            </div>
+            <div class="mensagem enviada">
+                <p>É pa ja patrão</p>
+            </div>
+        </div>
+        <div class="mensagem-input-conteiner">
+            <input type="text" class="mensagem-input" id="mensagem-input" placeholder="Solta o verbo chefia..." onkeydown="verificarEnter(event)">
+            <button class="botao-enviar" type="button" onclick="enviarMensagem()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
